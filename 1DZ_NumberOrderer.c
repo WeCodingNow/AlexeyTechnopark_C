@@ -15,7 +15,7 @@ int* open_file_read_numbers(char* _name)
       
       int counter = 0;
       char* _buf = (char*)malloc(sizeof(char));
-      while(fgets(_buf, STRING_SIZE, _h)) counter++; //считаем кол-во чисел в файле
+      while(fgets(_buf, STRING_SIZE, _h)) counter++; //Г±Г·ГЁГІГ ГҐГ¬ ГЄГ®Г«-ГўГ® Г·ГЁГ±ГҐГ« Гў ГґГ Г©Г«ГҐ
       
       
       int* _returnVector = (int*)malloc(sizeof(int) * counter + 1);
@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
             return 0; 
       }
       
-      int* _numbers = open_file_read_numbers(argv[1]); //первое число в полученном массиве - количество чисел в массиве
+      int* _numbers = open_file_read_numbers(argv[1]); //ГЇГҐГ°ГўГ®ГҐ Г·ГЁГ±Г«Г® Гў ГЇГ®Г«ГіГ·ГҐГ­Г­Г®Г¬ Г¬Г Г±Г±ГЁГўГҐ - ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г·ГЁГ±ГҐГ« Гў Г¬Г Г±Г±ГЁГўГҐ
       if(_numbers == NULL)
       {
             printf("Please provide a text file filled with a number on each line.");                      
