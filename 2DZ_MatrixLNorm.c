@@ -10,7 +10,7 @@ typedef struct
 double get_elem(void* _matr, int row, int col)
 {
        Matrix* _mat = _matr;
-       //ïðîâåðêè íà îøèáêó èíäåêñàöèè
+       //Ã¯Ã°Ã®Ã¢Ã¥Ã°ÃªÃ¨ Ã­Ã  Ã®Ã¸Ã¨Ã¡ÃªÃ³ Ã¨Ã­Ã¤Ã¥ÃªÃ±Ã Ã¶Ã¨Ã¨
        if( row > _mat->numberOfRows || col > _mat-> numberOfRows || row < 1 || col < 1 )
        {
               printf("\nUnable to access [%i+1,%i+1]", row, col);
@@ -18,14 +18,14 @@ double get_elem(void* _matr, int row, int col)
        }
        else
        {
-              return _mat->_Data[row-1][col-1]; //â ìàòåìàòèêå íóìåðàöèÿ èíäåêñîâ íà÷èíàåòñÿ ñ åäåíèöû;
+              return _mat->_Data[row-1][col-1]; //Ã¢ Ã¬Ã Ã²Ã¥Ã¬Ã Ã²Ã¨ÃªÃ¥ Ã­Ã³Ã¬Ã¥Ã°Ã Ã¶Ã¨Ã¿ Ã¨Ã­Ã¤Ã¥ÃªÃ±Ã®Ã¢ Ã­Ã Ã·Ã¨Ã­Ã Ã¥Ã²Ã±Ã¿ Ã± Ã¥Ã¤Ã¥Ã­Ã¨Ã¶Ã»;
        }
 }
 
 void set_elem(void* _matr, int row, int col, double elem)
 {
        Matrix* _mat = _matr;
-       //ïðîâåðêè íà îøèáêó èíäåêñàöèè
+       //Ã¯Ã°Ã®Ã¢Ã¥Ã°ÃªÃ¨ Ã­Ã  Ã®Ã¸Ã¨Ã¡ÃªÃ³ Ã¨Ã­Ã¤Ã¥ÃªÃ±Ã Ã¶Ã¨Ã¨
        if( row > _mat->numberOfRows || col > _mat-> numberOfRows || row < 1 || col < 1 )
        {
               printf("\nUnable to access [%i,%i]", row, col);
